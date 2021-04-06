@@ -1,0 +1,132 @@
+* {
+    color: #333;
+    font-family: "Times New Roman";
+}
+
+body {
+    background-color: #5e9cff;
+    margin:0;
+    padding:0;
+}
+
+section#header {
+//border-bottom: 3px solid #333;
+}
+
+a { text-decoration: none; }
+
+section#header a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 22%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    padding: 1%;
+    font-size: 33px;
+}
+
+section#header a i {
+    margin-right: 15px;
+}
+
+table, th, tr, td {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 30px;
+    text-align: left;
+    padding: 25px;
+    padding-left: 5%;
+    max-width: 123px;
+    color: darkslateblue;
+}
+
+table { width: 100%; border-bottom: 2px solid black;}
+
+
+.remove_from_basket {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 46px;
+    font-family: Arial;
+}
+
+.remove_from_basket:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.quantity_input {
+    text-align: center;
+    max-width: 115px;
+    font-size: 33px;
+    height: 72px;
+}
+
+tr:nth-child(even) { background-color: #95bcfc; }
+
+
+thead { border-bottom: 2px solid black; background-color: #EEE; }
+
+tbody { background-color: #b8d3ff;}
+
+.table_container { max-height: 80%; overflow-y: scroll; }
+
+#order_forms, #filter_container {
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+#order_forms form { margin: 0; padding: 0; }
+
+#filter_container { padding-left: 51px; }
+
+#order_forms input, #total_container, #filter_container input, #filter_container select, #filter_container label {
+    font-size: 30px;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+#order_forms input[type=submit], #filter_container input[type=button] {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: #333;
+}
+
+#order_forms input[type=submit]:hover,
+#filter_container input[type=button]:hover {
+    color: white;
+}
+
+#order_forms input[value='Place Order']:hover,
+#filter_container input[type=button]:hover  {
+    background-color: green;
+}
+
+#order_forms input[value='Empty Basket']:hover {
+    background-color: red;
+}
+
+input.largerCheckbox {
+    transform : scale(3);
+}
+
+#basket_item_count {
+    color: darkgreen;
+}
+
+a.basket_button {
+    color: white;
+    background-color: green;
+}
+
+a.basket_button:hover {
+    background-color: #333333;
+}
